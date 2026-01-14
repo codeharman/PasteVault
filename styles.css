@@ -24,15 +24,13 @@ body {
 
 header {
   display: flex;
+  align-items: center;
   gap: 1em;
-  padding: 1.5em;
+  padding: .8em;
   background: var(--bg-clr100);
-  box-shadow: 0px 2px 6px var(--bg-clr500);
+  box-shadow: 0px 1px 10px var(--bg-clr400);
 }
 
-.header-container {
-  
-}
 
 .cta {
   margin: 0;
@@ -44,10 +42,10 @@ a {
   font-weight: 700;
 }
 
-h1 {
+h2 {
   margin: 0;
   color: var(--bg-clr500);
-  text-shadow: 0px 3px 2px var(--bg-clr50);
+  text-shadow: 0px 3px 2px white;
 }
 
 img {
@@ -56,4 +54,64 @@ img {
   background: linear-gradient(90deg, var(--bg-clr100), var(--bg-clr200));
   border: .2em solid var(--bg-clr500);
   border-radius: 1em;
+}
+
+.main-div-one, 
+.main-div-two,
+small {
+  padding: 1em;
+}
+
+.aff-link {
+  padding: .6em;
+  border: none;
+  border-radius: .4em;
+}
+
+.text-input {
+  padding: 1em;
+  min-width: 20em;
+  min-height: 6em;
+  border-radius: .4em;
+  font-family: inherit;
+}
+
+.aff-link, .text-input {
+  box-shadow: 0px 4px 3px var(--bg-clr400);
+  border: 2px solid var(--bg-clr400);
+  margin-right: .4em;
+}
+
+#link-submit,
+#text-submit {
+  padding: .6em 1em;
+  border: 2px solid var(--bg-clr900);
+  border-radius: .4em;
+  background: var(--bg-clr500);
+  color: var(--bg-clr50);
+  font-family: inherit;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0px 5px 2px var(--bg-clr900);
+  transition: all .4s ease-in-out;
+}
+
+#link-submit:hover,
+#text-submit:hover {
+  transform: scale(1.03);
+  background-color: var(--bg-clr50);
+  color: var(--bg-clr500);
+  box-shadow: 0px 5px 2px var(--bg-clr500);
+  border: 2px solid var(--bg-clr500);
+}
+
+.main-div-two {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  max-width: 10.5em;
+}
+
+small {
+  color: var(--bg-clr700);
 }
