@@ -62,6 +62,10 @@ small {
   padding: 1em;
 }
 
+small {
+  max-width: 20px;
+}
+
 .aff-link {
   padding: .6em;
   border: none;
@@ -92,17 +96,19 @@ small {
   font-family: inherit;
   font-weight: bolder;
   cursor: pointer;
-  box-shadow: 0px 5px 2px var(--bg-clr900);
-  transition: all .4s ease-in-out;
+  box-shadow: 0px 5px 0px var(--bg-clr900);
+  transition: all .1s ease;
 }
 
 #link-submit:hover,
 #text-submit:hover {
-  transform: scale(1.03);
-  background-color: var(--bg-clr50);
-  color: var(--bg-clr500);
-  box-shadow: 0px 5px 2px var(--bg-clr500);
-  border: 2px solid var(--bg-clr500);
+  transform: translateY(-1px);
+}
+
+#link-submit:active,
+#text-submit:active {
+  transform: translateY(4px);
+  box-shadow: 0px 1px 0px var(--bg-clr900);
 }
 
 .main-div-two {

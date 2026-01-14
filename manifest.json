@@ -3,6 +3,9 @@
   "name": "Paste Vault",
   "version": "1.0.0",
   "description": "Save, manage, and copy reusable comment and post templates for social platforms. Built for creators who want consistency without automation.",
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "48": "./Images/link-48.svg",
     "128": "./Images/link-128.svg"
