@@ -9,5 +9,9 @@
   "icons": {
     "48": "./Images/link-48.svg",
     "128": "./Images/link-128.svg"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "./Images/link.png"
   }
 }
